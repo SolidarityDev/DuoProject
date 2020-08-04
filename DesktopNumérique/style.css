@@ -1,1 +1,60 @@
+    /* mon header */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        padding-left: 10%;
+    }
+    h2 {
+        margin-left: 38%;
+        font-family: cursive;
+        font-size: 30px;
+    }
+    /* ma section titre*/
+    #titre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2%;
+    }
+    #titre > i {
+        width: 10%;
+        font-size: 90px;
+    }
+    h3 {
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif ;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    /* ma section rythme */
+    #rythme {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 2%;
+        margin-bottom: 20%;
+        width: 95%;
+    }
+    #rythme > div {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
     
