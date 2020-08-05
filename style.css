@@ -1,0 +1,113 @@
+header{
+    justify-content: center;
+    text-align: center;
+}
+#imglogo{
+
+    width:60%
+}
+
+h1{
+    font-size: 3em;
+}
+
+h4{
+
+    font-size: 1.3em;
+}
+header nav{
+
+    position:relative;
+    right : 45%;
+}
+main{
+    margin-bottom: 20%;
+}
+#phraseintro{
+
+    position: relative;
+    text-align: center;
+    left:25%;
+    width: 50%;
+    margin-bottom: 10%;
+    
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 10%;
+}
+
+nav ul{
+    margin-right: 3%;
+}
+
+h2{
+    text-align: center;
+    margin:5%;
+}
+.actionimg{
+
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    justify-content: space-between;
+    padding:4%;
+}
+
+
+main ul li{
+    
+    margin-top: 5%;
+    list-style: none;
+}
+#titrestats{
+
+    margin:5%;
+}
+
+#assovideo{
+position: relative;
+right: auto;
+}
+
+#comprendre{
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#sharetitle{
+
+    margin-left: 15%;
+    font-size: 1.4em;
+}
+
+.shareblock{
+
+    margin-left: 5%;
+}
+div i{
+
+    width:40px;
+}
+
+
+footer{
+    margin:10%;
+}
+
+footer div{
+
+    position: relative;
+    left: 8%;
+    margin-bottom: 5%;
+}
+
+#droits{
+    position: relative;
+    right:8%;
+}
