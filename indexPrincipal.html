@@ -5,21 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./normalize.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Oswald:wght@469&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Caveat|Cinzel|Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Great+Vibes|Gupter|Metal+Mania|Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Courgette|Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Great+Vibes&family=Gupter&family=Julius+Sans+One&family=Reenie+Beanie&display=swap" rel="stylesheet">
+  <link rel="stylesheet">
+
+
+
     <title>Document</title>
 </head>
 <body>
     <header>
-        <img id ="imglogo" src ="./img/logo-du-theme-solidarite_111630-103.jpg" alt="logosite" align="center">
-        <h1>REST'SPACE</h1>
-        <h4>Partage et Laicité<h4>
-        <nav><a href="#"><img src="./img/burgermenu.png" alt="burger-menu-button" /></a></nav>
+        <img id ="imglogo" src ="./img/imagesite.png" alt="logosite" align="center">
+        <nav role = navigation>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+                    <a href="#"><li>Nos Actions></li></a>
+                    <a href="#"><li>Nous Connaître</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Faire un don</li></a>
+            </ul>
+            </div>
+        </nav>
+        <ul>
+        <h1 id="titre">REST'SPACE</h1>
+        <h4 id="phrase"><u>Partage et Laicité</u><h4>
+            <nav>
+                <div>
+                    <ul>
+                        <a class="firstnav" href="#"><img/><p>Nous Connaître</p></a>
+                      
+                        <a class="firstnav" href="#"><img/><p>Contact</p></a>
+
+                        <a class="firstnav" href="#"><img/><p>Faire un don</p></a>
+                        
+                    </ul>
+                </div>
+            </nav>
     </header>
     <section>
     <p id="phraseintro">Quelques bénévoles se sont donné cent jours pour lutter contre l’inégalité, l’injustice et mettre le numérique au service de tous.
         C’est la naissance de REST’SPACE.</p>
     </section>
-    <h2 id="titreaction">NOS ACTIONS</h2>
-  
+
+    <h2 id="titreaction"><u>NOS ACTIONS</u></h2>
             <nav>
                 <div>
                     <ul>
@@ -34,16 +71,29 @@
             </nav>
     
         <main>
-            <h2 id="titrestats">2 MINUTES POUR COMPRENDRE</h2>
+            <h2 id="titrestats"><u>2 MINUTES POUR COMPRENDRE</u></h2>
             <div id="comprendre">
                 <ul id ="listestats">
-                    <li> 58 000 Comptes Bénéficiaires Protégés.</li>
-                    <li> 145 Bénévoles.</li>
-                    <li> 3 Ateliers Numériques par semaine.</li>
-                    <li> 2 Ateliers Confiance En Soi par semaine</li>
-                    <li> 25 Entreprises Partenaires.</li>
-                    <li> 75 Personnes connectées en live en moyenne.</li>
-                    <li> 2 Grands Evénements par Mois.</li>
+                    <li class="chiffe"> 58 000 </li>
+                    <li>Comptes Bénéficiaires Protégés.</li>
+                    <li>-</li>
+                    <li class="chiffe">145 </li>
+                    <li>Bénévoles.</li>
+                    <li>-</li>
+                    <li class="chiffe">3</li>
+                    <li> Ateliers Numériques par semaine.</li>
+                    <li>-</li>
+                    <li class="chiffe">2</li>
+                    <li>Ateliers Confiance En Soi par semaine.</li>
+                    <li>-</li>
+                    <li class="chiffe"> 25 </li>
+                    <li>Entreprises Partenaires.</li>
+                    <li>-</li>
+                    <li class="chiffe">75 </li>
+                    <li>Personnes connectées en live en moyenne.</li>
+                    <li>-</li>
+                    <li class="chiffe">2 </li>
+                    <li>Grands Evénements par Mois.</li>
                 </ul>
                 <iframe id="assovideo" width="550" height="315" src="https://www.youtube.com/embed/ERdlVdTEW9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
