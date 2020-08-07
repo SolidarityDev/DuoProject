@@ -98,10 +98,165 @@ footer div{
     position: relative;
     right:8%;
 }
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #0DA19A;
+  color: rgb(228, 235, 234);
+  font-family: 'Amatic SC', cursive;
+
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 4%;
+  left: 20px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: black;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: black;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: rgba(0, 0, 0, 0.616);
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 100px;
+  padding-top: 100px;
+  opacity: 85%;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
 
 
 /*------------------GRANDE TABLETTE -------------------*/
-@media screen and (min-width: 769px) and (max-width: 1024px){
+@media screen and (min-width: 601px) and (max-width: 1024px){
     header{
         justify-content: center;
         text-align: center;
@@ -216,288 +371,7 @@ footer div{
         position: relative;
         right:8%;
     }
-    
-}
-/*------------------TABLETTE-------------------*/
-@media screen and (min-width: 601px) and (max-width: 768px){
-    header{
-        justify-content: center;
-        text-align: center;
-    }
-    #imglogo{
-    
-        width:50%
-    }
-    
-    #burgermenu{
-    display:none;
-    
-    }
-    
-    #titre{
-        font-size: 1.6em;
-    }
-    
-    h4{
-    
-        font-size: 1.3em;
-    }
-    
-    
-    .firstnav{
-        display: flex;
-    }
-    
-    main{
-        margin-bottom: 20%;
-    }
-    #phraseintro{
-    
-        position: relative;
-        text-align: center;
-        left:25%;
-        width: 50%;
-    }
-    
-    nav ul{
-        text-align: center;
-        list-style: none;
-        margin-bottom: 10%;
-    }
-    
-    
-    h2{
-        text-align: center;
-        margin:5%;
-    }
-    .actionimg{
-    
-        display: flex;
-        justify-content: center;
-        display: inline-block;
-        justify-content: space-between;
-        padding:4%;
-    }
-    
-    
-    main ul li{
-        
-        margin-top: 5%;
-        list-style: none;
-    }
-    #titrestats{
-    
-        margin:5%;
-    }
-    
-    #assovideo{
-    position: relative;
-    right: auto;
-    }
-    
-    #comprendre{
-        display: flex;
-        flex-flow: wrap;
-        text-align: center;
-        justify-content: center;
-        justify-content: space-around;
-    }
-    
-    #sharetitle{
-    
-        margin-left: 15%;
-        font-size: 1.4em;
-    }
-    
-    .shareblock{
-    
-        margin-left: 5%;
-    }
-    div i{
-    
-        width:40px;
-    }
-    
-    
-    footer{
-        margin:10%;
-    }
-    
-    footer div{
-    
-        position: relative;
-        left: 8%;
-        margin-bottom: 5%;
-    }
-    
-    #droits{
-        position: relative;
-        right:8%;
-    }
-    
-}
-@media screen and (max-width: 600px) {
-
-    #phrase{
-
-        font-size: 1.2em;
-        position:relative;
-        right:7%;
-        padding-top: 10%;
-        font-style: italic;
-        color:yellow;
-    }
-
-
-    #imglogo{
-
-        width:40%;
-        margin-top:5%;
-    }
-
-    #titre{
-        font-size: 2.8em;
-        position: absolute;
-        left:33%;
-        top :16%;
-        font-weight: bold;
-    }
-    #burgermenu{
-        position:absolute;
-        top :15;
-        text-align: center;
-        width:20px;
-    }
-    header nav ul li{
-        display:none;
-    }
-
-    #burgermenu:hover header nav ul li{
-        display:block;
-    }
-    header{
-        justify-content: center;
-        text-align: center;
-    }
-    
-    h4{
-    
-        font-size: 1.3em;
-    }
-    
-    
-    .firstnav {
-        display: none;
-    }
-    
-    main{
-        margin-bottom: 20%;
-    }
-
-    section{
-        
-        display: flex;
-        position: relative;
-        align-content: center;
-        align-items: center;
-        font-size: 0.8em; 
-    }
-    #phraseintro{
-        margin-bottom: 10%;;
-    }
-    
-    nav ul{
-        justify-content: center;
-        text-align: center;
-        list-style: none;
-        margin-bottom: 10%;
-        width:80%;
-    }
-    
-    
-    h2{
-        text-align: center;
-        margin:5%;
-    }
-    #titreaction{
-        font-size: 2em;
-    }
-    .actionimg{
-    
-        display: flex;
-        justify-content: center;
-        display: inline-block;
-        justify-content: space-between;
-        padding:4%;
-    }
-    nav div ul p{
-        color:white;
-    }
-    
-    main ul li{
-        
-        margin-top: 5%;
-        list-style: none;
-    }
-    #titrestats{
-    
-        margin:5%;
-        font-size: 2em;
-    }
-    
-    #assovideo{
-        margin-top:10%;
-        width:400px;
-        height : 300px;
-        margin-left:10%;
-    }
-    #comprendre{
-        text-align: center;
-        justify-content: center;
-        width:90%;
-    }
-    #liststats{
-        width:90%;
-    }
-    .chiffe{
-        font-size: 2em;
-    }
-    
-    #sharetitle{
-    
-        margin-left: 15%;
-        font-size: 1.4em;
-    }
-    
-    .shareblock{
-    
-        margin-left: 5%;
-    }
-    div i{
-    
-        width:40px;
-    }
-    
-    
-    footer{
-        margin:10%;
-    }
-    
-    footer div{
-    
-        position: relative;
-        left: 8%;
-        margin-bottom: 5%;
-    }
-    
-    }
-    #droits{
-        position: relative;
-        right:8%;
-    }
-
-  
-body
+    body
 {
   margin: 0;
   padding: 0;
@@ -544,6 +418,7 @@ body
   position: absolute;
   top: -7px;
   left: -5px;
+
   
   cursor: pointer;
   
@@ -650,4 +525,276 @@ body
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+    
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+    #imglogo{
+        width:40%;
+        margin-top:5%;
+    }
+
+    #phraseintro{
+       display:flex;
+        top:30px;
+        font-size: 1.4em;
+        margin-bottom: 35%;
+    }
+
+    #titre{
+        font-size: 3.4em;
+        position:relative;
+       
+        font-weight: bold;
+    }
+
+    #burgermenu{
+        position:absolute;
+        top :15;
+        text-align: center;
+        width:20px;
+    }
+
+    header nav ul li{
+        display:none;
+    }
+
+    #burgermenu:hover header nav ul li{
+        display:block;
+    }
+    header{
+        justify-content: center;
+        text-align: center;
+    }
+    
+    h4{
+    
+        font-size: 1.3em;
+    }
+    
+    
+    .firstnav {
+        display: none;
+    }
+    
+    main{
+        margin-bottom: 20%;
+    }
+
+    section{
+        
+        display: flex;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        font-size: 0.8em; 
+    }
+    
+    
+    nav ul{
+        justify-content: center;
+        text-align: center;
+        list-style: none;
+        margin-bottom: 10%;
+        width:80%;
+    }
+    
+    
+    h2{
+        text-align: center;
+        margin:5%;
+    }
+    #titreaction{
+        position: relative;
+        right:10px;
+        font-size: 2.3em;
+        text-align: center;
+    
+    }
+    .actionimg{
+    
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+        justify-content: space-between;
+        padding:12%;
+    }
+    nav div ul p {
+        color:white;
+        font-size: 1.8em;
+    }
+    nav div ul a p {
+        text-decoration: none;
+    }
+
+    main ul li{
+        
+        margin-top: 5%;
+        list-style: none;
+    }
+    #titrestats{
+    
+        margin:5%;
+        font-size: 2.6em;
+        margin-top: 40%;
+    }
+    
+    #assovideo{
+        margin-top:10%;
+        width:400px;
+        height : 300px;
+        margin-left:10%;
+    }
+    #comprendre{
+        text-align: center;
+        justify-content: center;
+        width:90%;
+    }
+    #liststats{
+        width:90%;
+    }
+    .chiffe{
+        font-size: 2.8em;
+        
+    }
+    
+    #sharetitle{
+    
+        margin-left: 15%;
+        font-size: 1.4em;
+    }
+    
+    .shareblock{
+    
+        position: relative;
+        top:40px;
+        margin-bottom:15%;
+    }
+    
+    div i{
+    
+        width:40px;
+    }
+    
+    
+    footer{
+        margin:10%;
+    }
+    
+    footer div{
+        position: relative;
+        left: 8%;
+        margin-bottom: 5%;
+    }
+    
+    
+    #droits{
+        position: relative;
+        right:8%;
+    }
+    p{
+        font-size: 1.4em;
+    }
+    
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  background: #0DA19A;
+  color: rgb(228, 235, 234);
+  font-family: 'Amatic SC', cursive;
+
+
+}
+
+#menuToggle
+{
+  display: none;
+}
+
+#menuToggle a
+{
+    display: none;
+}
+
+#menuToggle a:hover
+{
+    display: none;
+}
+
+
+#menuToggle input
+{
+    display: none;
+}
+
+/*
+ * Barre de menu Burger
+ */
+#menuToggle span
+{
+    display: none;
+}
+
+#menuToggle span:first-child
+{
+    display: none;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    display: none;
+}
+
+/* 
+ * Transformer les barre en croix
+ */
+#menuToggle input:checked ~ span
+{
+    display: none;
+}
+/*
+ * Cacher celui du millieu.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    display: none;
+}
+
+/*
+ * Le dernier switch de direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    display: none;
+}
+
+/*
+ * Positionner au top gauche
+ *
+ */
+#menu
+{
+    display: none;
+}
+
+#menu li
+{
+    display: none;
+}
+
+/*
+ * Le cacher de l'ecran
+ */
+#menuToggle input:checked ~ ul
+{
+    display: none;
+}
 }
