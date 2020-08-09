@@ -1,13 +1,10 @@
-    /* mes images */
-    img {
-        width: 50%;
-        height: 80%;
-    }
+    
     /* mon header */
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 5%;
     }
     nav {
         display: flex;
@@ -21,16 +18,52 @@
         font-family: cursive;
         font-size: 30px;
     }
-    /* ma section titre*/
-    #titre {
+    header p {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 30%;
+    }
+    
+    
+     /* ma section action */
+     #action {
+        display: flex;
+        flex-direction: column;
+        
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10%;   
+    }
+    #action  div {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2%;
     }
-    #titre > i {
-        width: 10%;
+    #action  div span {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #action  div span  i {
+        display: flex;
         font-size: 90px;
+        margin: 50% 10% 10% 10%;
+    }
+    h4 {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif ;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    /* ma section titre*/
+    #titre {
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
     }
     h3 {
         font-size: 30px;
@@ -38,50 +71,21 @@
         text-decoration: underline;
         text-transform: uppercase;
     }
-    /* ma section rythme et solidarite */
-    #rythme, #solidarite {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-left: 2%;
-        margin-bottom: 10%;
-        width: 95%;
-    }
-    /* mes paragraphe */
-    section div {
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-    }
-    /* mes sous-titres */
-    h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        text-decoration: underline;
-    }
-    /* ma section info */
-    #info {
-        display: flex;
-        justify-content: space-around;
-        width: 70%;
-        margin: auto;
-        margin-bottom: 10%;   
-    }
-    #info > span {
+    /* ma section présentation */
+    #presentation {
         display: flex;
         flex-direction: column;
         align-items: center;
+            
     }
-    #info > span > i {
-        display: flex;
-        font-size: 90px;
-        margin-bottom: 10%;
+    #presentation  div  {
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
+    #presentation  div :nth-of-type(1)  {
+        
+    }
+
     /* footer */
     footer {
         display: flex;
