@@ -133,9 +133,9 @@ footer div i {
     font-size: 1.8em;
 }
 #droits{
+    margin-top: 5%;
     position: relative;
-    left:8%;
-    font-size:1.2em;
+    font-size:1.5em;
 }
 body
 {
@@ -170,7 +170,7 @@ body
   
   #menuToggle a:hover
   {
-    color: tomato;
+    color: grey;
   }
   
   
