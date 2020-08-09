@@ -547,7 +547,7 @@ body
     }
 
     #titre{
-        font-size: 3.4em;
+        font-size: 3.8em;
         position:relative;
        
         font-weight: bold;
@@ -659,8 +659,10 @@ body
         width:90%;
     }
     .chiffe{
-        font-size: 2.8em;
-        
+        font-size: 2.8em; 
+    }
+    .chiffreP{
+        font-size: 1.6em;
     }
     
     #sharetitle{
