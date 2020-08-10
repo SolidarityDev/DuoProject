@@ -1,9 +1,15 @@
-    /* mes images */
-    img {
-        width: 50%;
-        height: 80%;
-    }
-    /* mon header */
+/* mes images */
+img {
+    width: 40%;
+    height: 40%;
+}
+/* mes paragraphe */
+section div {
+    display: flex;
+    width: 40%;
+    padding: 2%;
+}
+/* mon header */
     header {
         display: flex;
         flex-direction: column;
@@ -26,7 +32,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 2%;
+        margin: 8% 2%;
     }
     #titre > i {
         width: 10%;
@@ -37,35 +43,19 @@
         font-family: 'Times New Roman', Times, serif ;
         text-decoration: underline;
         text-transform: uppercase;
-    }
-    /* ma section rythme et solidarite */
-    #rythme, #solidarite {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-left: 2%;
-        margin-bottom: 10%;
-        width: 95%;
-    }
-    /* mes paragraphe */
-    section div {
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-    }
-    /* mes sous-titres */
-    h4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        text-transform: uppercase;
-        text-decoration: underline;
-    }
-    /* ma section info */
-    #info {
+     } 
+     /* section coaching et self*/
+     #coaching, #self {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         padding-left: 2%;
+         padding-right: 2%;
+         width: 100%;
+         margin: 10% 2%;
+     }
+     /* INFO */
+     #info {
         display: flex;
         justify-content: space-around;
         width: 70%;
