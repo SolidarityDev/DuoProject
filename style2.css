@@ -69,6 +69,7 @@
   color: rgb(228, 235, 234);
   font-family: 'Amatic SC', cursive;
 }
+
 #phraseintro{
 
     position: relative;
@@ -88,6 +89,10 @@
         right:100px;
         margin-bottom: 35%;
       
+    }
+    #weekimg{
+        position:relative;
+        top:60px;
     }
     #confimage{
         width:250px;
